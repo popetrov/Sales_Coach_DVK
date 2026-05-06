@@ -26,6 +26,7 @@ from prompts import (
     BG_CLIENT_EVALUATION_RULES,
     BG_CLIENT_ALGORITHM,
     CLIENT_ARCHETYPES,
+    ARCHETYPE_BEHAVIOR_MATRIX,
 )
 
 
@@ -288,6 +289,7 @@ async def gpt_training_hint(data, manager_message, history):
 
 {TRAINING_MODE_RULES}
 {CLIENT_ARCHETYPES}
+{ARCHETYPE_BEHAVIOR_MATRIX}
 
 {get_product_prompt(data)}
 
@@ -368,6 +370,7 @@ async def gpt_client_reply(data, manager_message, history):
 
 {CLIENT_BEHAVIOR_RULES}
 {CLIENT_ARCHETYPES}
+{ARCHETYPE_BEHAVIOR_MATRIX}
 
 {get_product_prompt(data)}
 
@@ -425,6 +428,7 @@ LOST — менеджер потерял диалог: вода, круги, н�
 
 {CLIENT_BEHAVIOR_RULES}
 {CLIENT_ARCHETYPES}
+{ARCHETYPE_BEHAVIOR_MATRIX}
 
 {get_product_prompt(data)}
 
@@ -464,6 +468,7 @@ async def gpt_feedback(data, history, final_status):
 
 {BAD_MANAGER_PHRASES}
 {CLIENT_ARCHETYPES}
+{ARCHETYPE_BEHAVIOR_MATRIX}
 
 {get_product_prompt(data)}
 
