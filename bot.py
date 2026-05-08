@@ -27,6 +27,7 @@ from prompts import (
     BG_CLIENT_ALGORITHM,
     CLIENT_ARCHETYPES,
     ARCHETYPE_BEHAVIOR_MATRIX,
+    DIFFICULTY_BEHAVIOR_RULES,
 )
 
 
@@ -288,6 +289,7 @@ async def gpt_training_hint(data, manager_message, history):
 {BAD_MANAGER_PHRASES}
 
 {TRAINING_MODE_RULES}
+{DIFFICULTY_BEHAVIOR_RULES}
 {CLIENT_ARCHETYPES}
 {ARCHETYPE_BEHAVIOR_MATRIX}
 
@@ -369,6 +371,7 @@ async def gpt_client_reply(data, manager_message, history):
 {BAD_MANAGER_PHRASES}
 
 {CLIENT_BEHAVIOR_RULES}
+{DIFFICULTY_BEHAVIOR_RULES}
 {CLIENT_ARCHETYPES}
 {ARCHETYPE_BEHAVIOR_MATRIX}
 
@@ -427,6 +430,7 @@ LOST — менеджер потерял диалог: вода, круги, н�
 {COMMON_SALES_RULES}
 
 {CLIENT_BEHAVIOR_RULES}
+{DIFFICULTY_BEHAVIOR_RULES}
 {CLIENT_ARCHETYPES}
 {ARCHETYPE_BEHAVIOR_MATRIX}
 
@@ -463,6 +467,7 @@ async def gpt_feedback(data, history, final_status):
 Дай подробный, но понятный разбор игры.
 
 {EVALUATION_RULES}
+{DIFFICULTY_BEHAVIOR_RULES}
 
 {COMMON_SALES_RULES}
 
